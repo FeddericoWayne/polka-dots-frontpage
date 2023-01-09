@@ -54,6 +54,7 @@ body {
 
 
 #title {
+    cursor: pointer;
     --a: 50%;
     --b: 50%;
     font-size: 1.5rem;

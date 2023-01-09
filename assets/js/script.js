@@ -41,7 +41,9 @@ window.addEventListener("load", () => {
 
 })
 
-
+$("#title").on("click",()=>{
+    location.reload();
+})
 
 
 $("#title").on("mousemove",(event)=>{
@@ -62,7 +64,7 @@ $("#bio").on("click",()=>{
     $("#social-media").css({"top":"-100vh","opacity":"0%"});
     $("#contact-info").css({"left":"200vw","opacity":"0%"});
 
-    $("#bio").on("mouseenter",()=>{
+    $("#bio").on("mousedown",()=>{
         $("#biography").css({"animation":"alert","animation-duration":"0.5s","animation-iteration-count":"1","animation-fill-mode":"forward"})
     })
     $("#bio").on("mouseleave",()=>{
@@ -86,7 +88,7 @@ $("#social-link").on("click",()=>{
     $("#biography").css({"left":"-100vw","opacity":"0%"});
     $("#contact-info").css({"left":"200vw","opacity":"0%"});
 
-    $("#social-link").on("mouseenter",()=>{
+    $("#social-link").on("mousedown",()=>{
         $("#social-media").css({"animation":"alert","animation-duration":"0.5s","animation-iteration-count":"1","animation-fill-mode":"forward"})
     })
     $("#social-link").on("mouseleave",()=>{
@@ -108,7 +110,7 @@ $("#contact").on("click",()=>{
     $("#social-media").css({"top":"-100vh","opacity":"0%"});
     $("#biography").css({"left":"-100vw","opacity":"0%"});
 
-    $("#contact").on("mouseenter",()=>{
+    $("#contact").on("mousedown",()=>{
         $("#contact-info").css({"animation":"alert","animation-duration":"0.5s","animation-iteration-count":"1","animation-fill-mode":"forward"})
     })
     $("#contact").on("mouseleave",()=>{
