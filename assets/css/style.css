@@ -138,6 +138,24 @@ body {
 
 }
 
+#contact-info {
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    overflow: hidden;
+    margin-top: 5vh;
+    margin-right:0;
+    width: 70vw;
+    height: fit-content;
+    border: 10px solid grey;
+    border-radius: 35px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    opacity: 0%;
+    left: 200vw;
+    position: absolute;
+
+}
+
 .btn {
     cursor: pointer;
     width: fit-content;
