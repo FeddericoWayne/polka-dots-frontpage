@@ -1,0 +1,577 @@
+:root {
+    --green:#CCE8DB;
+    --blue:#C1D4E3;
+    --lavender: #BEB4D6;
+    --nude:#FADAE2;
+    --pink:#F8B3CA;
+    --violet:#CC97C1;
+    --almond:#F5D6C4;
+    --ecru:#FCF4E3;
+    --moss:#DEEDD5;
+    --coral:#F08B8B;
+    --peach:#F0B0A1;
+    --shadow:#B6B7D1;
+    --grass:#EDFAE1;
+    --grey:rgb(186, 186, 186);
+    --dirty-white:#E2F0CB;
+    --mint:#B5EAD7;
+    --periwinkle:#C7CEEA;
+    --lilac:#CFAEC2;
+    --mentos:#E4D8EB;
+    --steel-blue:#B1C2DD;
+    --muted:#EBEBEB;
+    --silver:#DBD9D9;
+    --cloudy:#EBEBEB;
+    --cotton-candy:#FFBADE;
+    --blonde:#FFEFC0;
+    --red:#ED6572;
+    --orange:#ED8C79;
+    --cheddar:#F6BF85;
+    --celadon:#A8E3B3;
+    --purple:#B7ADED;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+    height:100%;
+}
+
+* {
+    font-family: 'Rubik Bubbles', cursive;;
+}
+
+body {
+    --x: 50%;
+    --y: 50%;
+    height:100%;
+    margin:0;
+    background-repeat: no-repeat;
+    background: radial-gradient(circle at var(--x) var(--y), rgb(255, 254, 202) 0%, rgb(204, 226, 255) 50%) fixed;
+
+}
+
+
+#title {
+    --a: 50%;
+    --b: 50%;
+    font-size: 1.5rem;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    height:fit-content;
+    width: fit-content;
+    background: radial-gradient(circle at var(--a) var(--b), grey 0%, black 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    user-select: none;
+}
+
+#nav {
+    font-size: 1.5rem;
+    width: fit-content;
+    color: black;
+    display:flex;
+    margin-left: auto;
+    margin-right:auto;
+    flex-direction: row;
+    column-gap: 25px;
+    z-index: 100;
+}
+
+#nav a {
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+
+#nav a:hover {
+    color:white;
+    text-shadow: 0px 0px 5px black;
+}
+
+#biography {
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    overflow: hidden;
+    margin-top: 5vh;
+    margin-right:0;
+    width: 70vw;
+    height: fit-content;
+    border: 10px solid grey;
+    border-radius: 35px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    opacity: 0%;
+    left: -100vw;
+    position: absolute;
+
+}
+
+#bio-wrapper {
+    width: fit-content;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#social-media {
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    overflow: hidden;
+    margin-top: 5vh;
+    margin-right:0;
+    width: 70vw;
+    height: fit-content;
+    border: 10px solid grey;
+    border-radius: 35px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    opacity: 0%;
+    top: -100vh;
+    left: 13vw;
+    position: absolute;
+
+}
+
+.btn {
+    cursor: pointer;
+    width: fit-content;
+    color: grey;
+    background-color: white;
+    border-radius: 25px;
+    border: 5px solid grey;
+    text-align: center;
+    padding:10px;
+    margin-right:auto;
+    margin-left:auto;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.text {
+    margin: 10vh 10vw 10vh;
+
+}
+
+.btn:hover {
+    background-color: grey;
+    color:white;
+    border: 5px solid var(--purple);
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 0px black;
+}
+
+.btn:active {
+    transition:none;
+    transform: translateY(5px);
+    box-shadow: none;
+    background-color: var(--pink);
+    color: black;
+    border: 5px solid var(--grey);
+}
+
+#green-dot {
+    position: fixed;
+    top:5%;
+    left:15%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 10vw;
+    width: 10vw;
+    background: var(--green);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#blue-dot {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 12vw;
+    width: 12vw;
+    background: var(--blue);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#lavender-dot {
+    position: fixed;
+    top: 35%;
+    left: 75%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 14vw;
+    width: 14vw;
+    background: var(--lavender);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#nude-dot {
+    position: fixed;
+    top: 76%;
+    left: 5%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 16vw;
+    width: 16vw;
+    background: var(--nude);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#pink-dot {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 18vw;
+    width: 18vw;
+    background: var(--pink);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#violet-dot {
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 20vw; 
+    width: 20vw;
+    background: var(--violet);
+    transition-property: all;
+    transition-duration: 0.5s;
+    z-index: -1;
+
+}
+#almond-dot {
+    position: fixed;
+    top: 25%;
+    left: 2%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 22vw; 
+    width: 22vw;
+    background: var(--almond);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#ecru-dot {
+    position: fixed;
+    top: -10%;
+    left: 80%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 24vw; 
+    width: 24vw;
+    background: var(--ecru);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#moss-dot {
+    position: fixed;
+    top: 70%;
+    left: 65%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 26vw; 
+    width: 26vw;
+    background: var(--moss);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#coral-dot {
+    position: fixed;
+    top: -33%;
+    left: 28%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 28vw; 
+    width: 28vw;
+    background: var(--coral);
+    transition-property: all;
+    transition-duration: 0.5s;
+    z-index: -1;
+}
+#peach-dot {
+    position: fixed;
+    top: -13%;
+    left: 58%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 20vw; 
+    width: 20vw;
+    background: var(--peach);
+    transition-property: all;
+    transition-duration: 0.5s;
+    z-index: -1;
+}
+#shadow-dot {
+    position: fixed;
+    top: 19%;
+    left: 25%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 14vw; 
+    width: 14vw;
+    background: var(--shadow);
+    transition-property: all;
+    transition-duration: 0.5s;
+    z-index: -1;
+}
+#grass-dot {
+    position: fixed;
+    top: 51%;
+    left: 63%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 10vw; 
+    width: 10vw;
+    background: var(--grass);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#dirty-white-dot {
+    position: fixed;
+    top: 27%;
+    left: 66%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 6vw; 
+    width: 6vw;
+    background: var(--dirty-white);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#mint-dot {
+    position: fixed;
+    top: 38%;
+    left: 90%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 6vw; 
+    width: 6vw;
+    background: var(--mint);
+    transition-property: all;
+    transition-duration: 0.5s;
+ 
+}
+#periwinkle-dot {
+    position: fixed;
+    top: 65%;
+    left: 1%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 7vw; 
+    width: 7vw;
+    background: var(--periwinkle);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#lilac-dot {
+    position: fixed;
+    top: 9%;
+    left: 6%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 7vw; 
+    width: 7vw;
+    background: var(--lilac);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#mentos-dot {
+    position: fixed;
+    top: 57%;
+    left: 22%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 7vw; 
+    width: 7vw;
+    background: var(--mentos);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#steel-blue-dot {
+    position: fixed;
+    top: 60%;
+    left: 86%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 7vw; 
+    width: 7vw;
+    background: var(--steel-blue);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#muted-dot {
+    position: fixed;
+    top: 71%;
+    left: 20%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 7vw; 
+    width: 7vw;
+    background: var(--muted);
+    transition-property: all;
+    transition-duration: 0.5s;
+ 
+}
+#silver-dot {
+    position: fixed;
+    top: 74%;
+    left: 91%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 9vw; 
+    width: 9vw;
+    background: var(--silver);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#cloudy-dot {
+    position: fixed;
+    top: 85%;
+    left: 41%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 9vw; 
+    width: 9vw;
+    background: var(--cloudy);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#cotton-candy-dot {
+    position: fixed;
+    top: 53%;
+    left: 93%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 5vw; 
+    width: 5vw;
+    background: var(--cotton-candy);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#red-dot {
+    position: fixed;
+    top: 80%;
+    left: 27%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 5vw; 
+    width: 5vw;
+    background: var(--red);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#orange-dot {
+    position: fixed;
+    top: 0%;
+    left: -3%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 8vw; 
+    width: 8vw;
+    background: var(--orange);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#cheddar-dot {
+    position: fixed;
+    top: 89%;
+    left: 30%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 8vw; 
+    width: 8vw;
+    background: var(--cheddar);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#celadon-dot {
+    position: fixed;
+    top: 40%;
+    left: 39%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 4vw; 
+    width: 4vw;
+    background: var(--celadon);
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+#purple-dot {
+    position: fixed;
+    top: 23%;
+    left: 75%;
+    clip-path: circle(50%);
+    border-radius:50%;
+    box-shadow: inset 0px 0px 50px white;
+    height: 5vw; 
+    width: 5vw;
+    background: var(--purple);
+    transition-property: all;
+    transition-duration: 0.5s;
+    z-index: -1;
+
+}
+
+
+
+
+
+
