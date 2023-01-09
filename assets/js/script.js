@@ -9,10 +9,19 @@ $("#title").on("mousemove",(event)=>{
 
 
 $("#bio").on("click",()=>{
+
+
     $("#biography").css({"left":"13vw","opacity":"100%"});
     $(".dot").css("z-index","-1");
     $("#social-media").css({"top":"-100vh","opacity":"0%"});
     $("#contact-info").css({"left":"200vw","opacity":"0%"});
+
+    $("#bio").on("mouseenter",()=>{
+        $("#biography").css({"animation":"alert","animation-duration":"0.5s","animation-iteration-count":"1","animation-fill-mode":"forward"})
+    })
+    $("#bio").on("mouseleave",()=>{
+        $("#biography").css("animation","none");
+    })
 
 })
 
@@ -30,6 +39,13 @@ $("#social-link").on("click",()=>{
     $(".dot").css("z-index","-1");
     $("#biography").css({"left":"-100vw","opacity":"0%"});
     $("#contact-info").css({"left":"200vw","opacity":"0%"});
+
+    $("#social-link").on("mouseenter",()=>{
+        $("#social-media").css({"animation":"alert","animation-duration":"0.5s","animation-iteration-count":"1","animation-fill-mode":"forward"})
+    })
+    $("#social-link").on("mouseleave",()=>{
+        $("#social-media").css("animation","none");
+    })
 })
 
 $("#social-collapse").on("mousedown",()=>{
@@ -45,6 +61,13 @@ $("#contact").on("click",()=>{
     $(".dot").css("z-index","-1");
     $("#social-media").css({"top":"-100vh","opacity":"0%"});
     $("#biography").css({"left":"-100vw","opacity":"0%"});
+
+    $("#contact").on("mouseenter",()=>{
+        $("#contact-info").css({"animation":"alert","animation-duration":"0.5s","animation-iteration-count":"1","animation-fill-mode":"forward"})
+    })
+    $("#contact").on("mouseleave",()=>{
+        $("#contact-info").css("animation","none");
+    })
 
 })
 
