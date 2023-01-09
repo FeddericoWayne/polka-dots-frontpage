@@ -1,3 +1,49 @@
+
+
+window.addEventListener("load", () => {
+    $("#title").hide().delay(2000).fadeIn(1000);
+    $("#nav").hide().delay(3000).fadeIn(1000);
+
+    $("#nude-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.5s"});
+    $("#periwinkle-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.5s"});
+    $("#muted-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"1","animation-fill-mode":"forward","animation-delay":"0.5s"});
+
+    $("#orange-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.6s"});
+    $("#lilac-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.6s"});
+    $("#almond-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.6s"});
+    $("#mentos-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.6s"});
+    $("#red-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.6s"});
+    $("#cheddar-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.6s"});
+
+    $("#green-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.7s"});
+    $("#pink-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.7s"});
+    $("#cloudy-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.7s"});
+    $("#shadow-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.7s"});
+
+    $("#coral-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.8s"});
+    $("#celadon-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.8s"});
+    $("#blue-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.8s"});
+
+    $("#violet-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.9s"});
+    $("#grass-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.9s"});
+    $("#moss-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"0.9s"});
+
+    $("#peach-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"1s"});
+    $("#dirty-white-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"1s"});
+    $("#lavender-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"1s"});
+    $("#steel-blue-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"1s"});
+    $("#silver-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"1s"});
+    $("#purple-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"1s"});
+
+    $("#ecru-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"1.1s"});
+    $("#mint-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"1.1s"});
+    $("#cotton-candy-dot").css({"animation-name":"hop","animation-duration":"1s","animation-iteration-count":"3","animation-fill-mode":"forward","animation-delay":"1.1s"});
+
+})
+
+
+
+
 $("#title").on("mousemove",(event)=>{
     let a = event.pageX - event.target.offsetLeft;
     let b = event.pageY - event.target.offsetTop;
@@ -31,7 +77,7 @@ $("#bio-collapse").on("mousedown",()=>{
 
 $("#bio-collapse").on("mouseup",()=>{
     $("#biography").css({"left":"-100vw","opacity":"0%"});
-    $(".dot").not("#coral-dot, #peach-dot, #violet-dot, #shadow-dot, #green-dot").css("z-index","0");
+    $(".dot").not("#coral-dot, #lilac-dot, #almond-dot, #peach-dot, #violet-dot, #shadow-dot, #green-dot").css("z-index","0");
 })
 
 $("#social-link").on("click",()=>{
@@ -53,7 +99,7 @@ $("#social-collapse").on("mousedown",()=>{
 })
 $("#social-collapse").on("mouseup",()=>{
     $("#social-media").css({"top":"-100vh","opacity":"0%"});
-    $(".dot").not("#coral-dot, #peach-dot, #violet-dot, #shadow-dot, #green-dot").css("z-index","0");
+    $(".dot").not("#coral-dot, #lilac-dot, #almond-dot, #peach-dot, #violet-dot, #shadow-dot, #green-dot").css("z-index","0");
 })
 
 $("#contact").on("click",()=>{
@@ -77,7 +123,7 @@ $("#contact-collapse").on("mousedown",()=>{
 
 $("#contact-collapse").on("mouseup",()=>{
     $("#contact-info").css({"left":"200vw","opacity":"0%"});
-    $(".dot").not("#coral-dot, #peach-dot, #violet-dot, #shadow-dot, #green-dot").css("z-index","0");
+    $(".dot").not("#coral-dot, #lilac-dot, #almond-dot, #peach-dot, #violet-dot, #shadow-dot, #green-dot").css("z-index","0");
 })
 
 

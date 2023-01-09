@@ -251,7 +251,7 @@ li {
 }
 
 .text {
-    margin: 10vh 10vw 10vh;
+    margin: 2vh 10vw 2vh;
 
 }
 
@@ -284,6 +284,7 @@ li {
     background: var(--green);
     transition-property: all;
     transition-duration: 0.5s;
+    z-index: -1;
 
 }
 #blue-dot {
@@ -369,6 +370,7 @@ li {
     background: var(--almond);
     transition-property: all;
     transition-duration: 0.5s;
+    z-index: -1;
 
 }
 #ecru-dot {
@@ -509,6 +511,7 @@ li {
     background: var(--lilac);
     transition-property: all;
     transition-duration: 0.5s;
+    z-index: -1;
 
 }
 #mentos-dot {
