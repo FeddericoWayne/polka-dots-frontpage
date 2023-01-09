@@ -100,8 +100,10 @@ body {
 }
 
 #biography {
+    --c:50%;
+    --d:50%;
     text-align: center;
-    background-color: rgba(255,255,255,0.6);
+    background: radial-gradient(circle at var(--c) var(--d), white 40%, rgba(255,255,255,0.5) 50%) ;
     overflow: hidden;
     margin-top: 5vh;
     margin-right:0;
@@ -126,8 +128,10 @@ body {
 }
 
 #social-media {
+    --e:50%;
+    --f:50%;
     text-align: center;
-    background-color: rgba(255,255,255,0.6);
+    background: radial-gradient(circle at var(--e) var(--f), white 40%, rgba(255,255,255,0.5) 50%) ;
     overflow: hidden;
     margin-top: 5vh;
     margin-right:0;
@@ -203,8 +207,10 @@ body {
 }
 
 #contact-info {
+    --g:50%;
+    --h:50%;
     text-align: center;
-    background-color: rgba(255,255,255,0.6);
+    background: radial-gradient(circle at var(--g) var(--h), white 40%, rgba(255,255,255,0.5) 50%) ;
     overflow: hidden;
     margin-top: 5vh;
     margin-right:0;

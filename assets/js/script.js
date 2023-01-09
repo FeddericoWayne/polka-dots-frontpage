@@ -55,6 +55,13 @@ $("#title").on("mousemove",(event)=>{
 
 })
 
+$("#biography").on("mousemove",(event)=>{
+    
+    let c = event.pageX - $("#biography")[0].offsetLeft;
+    let d = event.pageY - $("#biography")[0].offsetTop;
+    $("#biography").css({"--c":`${ c }px`, "--d":`${ d }px`});
+})
+
 
 $("#bio").on("click",()=>{
 
@@ -82,6 +89,13 @@ $("#bio-collapse").on("mouseup",()=>{
     $(".dot").not("#coral-dot, #lilac-dot, #almond-dot, #peach-dot, #violet-dot, #shadow-dot, #green-dot").css("z-index","0");
 })
 
+$("#social-media").on("mousemove",(event)=>{
+
+    let e = event.pageX - $("#social-media")[0].offsetLeft;
+    let f = event.pageY - $("#social-media")[0].offsetTop;
+    $("#social-media").css({"--e":`${ e }px`, "--f":`${ f }px`});
+})
+
 $("#social-link").on("click",()=>{
     $("#social-media").css({"top":"27vh","opacity":"100%"});
     $(".dot").css("z-index","-1");
@@ -102,6 +116,13 @@ $("#social-collapse").on("mousedown",()=>{
 $("#social-collapse").on("mouseup",()=>{
     $("#social-media").css({"top":"-100vh","opacity":"0%"});
     $(".dot").not("#coral-dot, #lilac-dot, #almond-dot, #peach-dot, #violet-dot, #shadow-dot, #green-dot").css("z-index","0");
+})
+
+$("#contact-info").on("mousemove",(event)=>{
+
+    let g = event.pageX - $("#contact-info")[0].offsetLeft;
+    let h = event.pageY - $("#contact-info")[0].offsetTop;
+    $("#contact-info").css({"--g":`${ g }px`, "--h":`${ h }px`});
 })
 
 $("#contact").on("click",()=>{
